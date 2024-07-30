@@ -7,14 +7,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Biblioteca.Entities.Models
 {
-    public class Autor
+    public class Editorial
     {
-
         [Key]
 
-        public int Id { get; set; } 
-        public required string Nombre { get; set; }
-        public required string Apellido { get; set; }
+        public int Id { get; set; }
+        public string Nombre { get; set; }
+
         public ICollection<Libro> Libros { get; set; }
+
     }
 }
